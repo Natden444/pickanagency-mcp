@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+  "name": "io.github.natden444/pickanagency",
+  "description": "Search 47,000+ marketing agencies and get AI-matched with fitted agencies, from Pick an Agency.",
+  "repository": {
+    "url": "https://github.com/Natden444/pickanagency-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "websiteUrl": "https://www.pickanagency.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.pickanagency.com/api/mcp/mcp"
+    }
+  ]
+}
