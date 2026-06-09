@@ -43,6 +43,16 @@ claude mcp add --transport http pick-an-agency https://www.pickanagency.com/api/
 ### Claude Desktop / Claude.ai
 **Settings → Connectors → Add custom connector** → paste the endpoint URL above.
 
+### Run locally (stdio)
+Prefer a local server? This package is a thin stdio proxy to the hosted endpoint:
+```bash
+npx -y github:Natden444/pickanagency-mcp
+```
+Or in any MCP client config:
+```json
+{ "mcpServers": { "pick-an-agency": { "command": "npx", "args": ["-y", "github:Natden444/pickanagency-mcp"] } } }
+```
+
 ## Example prompts
 
 - *"Find the top SEO agencies in the US."*

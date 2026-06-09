@@ -1,0 +1,14 @@
+{
+  "name": "pickanagency-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Pick an Agency — search 47,000+ marketing agencies and get AI-matched with fitted agencies.",
+  "type": "module",
+  "bin": { "pickanagency-mcp": "index.mjs" },
+  "main": "index.mjs",
+  "scripts": { "start": "node index.mjs" },
+  "dependencies": { "@modelcontextprotocol/sdk": "^1.12.0" },
+  "homepage": "https://www.pickanagency.com",
+  "repository": { "type": "git", "url": "git+https://github.com/Natden444/pickanagency-mcp.git" },
+  "license": "MIT",
+  "keywords": ["mcp", "model-context-protocol", "marketing", "agencies", "agency-directory", "ai-matching"]
+}
