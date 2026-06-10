@@ -1,5 +1,5 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.natden444/pickanagency",
   "description": "Search 47,000+ marketing agencies and get AI-matched with fitted agencies, from Pick an Agency.",
   "repository": {
