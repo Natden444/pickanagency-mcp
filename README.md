@@ -72,3 +72,15 @@ The agent calls the tools and answers with real agencies and their [pickanagency
 ## License
 
 MIT © Pick an Agency
+
+## Troubleshooting
+
+**Tools don't appear after adding the connector** — MCP servers connect at session start: open a new conversation (Claude.ai) or restart the session (`claude` again in Claude Code), then check the connectors/tools menu. In Claude Code, `/mcp` lists connected servers and their status.
+
+**"Connection failed" or timeouts** — verify the endpoint URL is exactly `https://www.pickanagency.com/api/mcp/mcp` (the `/mcp` suffix matters). The server is public; no API key, OAuth, or headers are needed. Check status by visiting [pickanagency.com](https://www.pickanagency.com) — if the site is up, the MCP endpoint is up.
+
+**Empty results** — broaden the filters: try a country instead of a small city, or drop `min_rating`. `match_agencies` requires at least one service in `services`.
+
+**`get_agency` says "no agency found"** — slugs must be exact. Find the right slug with `search_agencies` first (it's the last path segment of the profile URL).
+
+**Still stuck?** Email [hello@pickanagency.com](mailto:hello@pickanagency.com) or [open an issue](https://github.com/Natden444/pickanagency-mcp/issues).
